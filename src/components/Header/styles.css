@@ -61,9 +61,9 @@
         font-size: 1.6rem;
     }
     .drawer-div{
-        width: 30vw;
+        width: 35vw;
         height: 100vh;
-        /* padding: 1.5rem; */
+        padding: 1.5rem;
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
