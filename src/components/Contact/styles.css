@@ -8,12 +8,13 @@
 .contact-container p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: yellow;
 }
 
 .thankyou-note {
   width: 80%;
   margin: 40px auto;
-  color: rgba(177, 277, 277, 0.7);
+  color: wheat;
 }
 
 .thankyou-note:hover {

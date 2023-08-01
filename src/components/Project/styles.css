@@ -8,6 +8,9 @@
     text-shadow: 2px 2px 5px rgb(3, 43, 13);
 
 }
+.project-page{
+    margin-top: 10%;
+}
 .project-title:hover{
     color:#fff;  
 }
