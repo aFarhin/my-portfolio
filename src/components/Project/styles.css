@@ -68,10 +68,11 @@
 }
 .git-logo{
     width: 1.8rem;
+    background-color: var(--theme);
 }
 .link-logo{
     width: 1.8rem;
-    background-color: white !important;
+    background-color: yellowgreen;
     border-radius: 50%;
 }
 a{
