@@ -208,7 +208,14 @@
 }
 
 @media only screen and (max-width: 500px){
-    .sample-div{
-        display: none;
+    .sample-div img{
+        height: 200px;
+    }
+
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* row-gap: .7rem; */
     }
 }
