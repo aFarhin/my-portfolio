@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Resume from './a.farhin resume.pdf'
+import Resume from './Farhin_Ahmeda_CV-2.pdf'
 import './styles.css'
 
 const DownloadButton = () => {
