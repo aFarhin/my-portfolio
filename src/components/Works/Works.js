@@ -63,7 +63,7 @@ const projectList = [
     live : "https://tic-tac-toe-afarhin.vercel.app/"
   },
   {
-    name: 'CounterGame',
+    name: 'GuessNumber',
     description:
       'The NumberGame App is a simple web application developed using HTML, CSS, and JavaScript.A number guessing game where the players objective is to guess a random number.The players score increases with each correct guess, and they have 20 chances to guess the correct number.The score decreases with each wrong guess, adding an element of challenge to the game.If the player can not guess the correct number within the given chances, they lose the game and have the option to play again.A high score is tracked and updated based on a comparison between the previous high score and the players current score.The game offers an engaging and interactive experience where players can test their guessing skills and strive to achieve a new high score.',
       
