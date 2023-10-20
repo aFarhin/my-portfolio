@@ -15,11 +15,12 @@ body {
     overflow-x: hidden;
     position: relative;
     margin-bottom : 0rem;
+    background: var(--theme);
     color: var(--white);
   
   }
   
-  body::before {
+  /* body::before {
     content: "";
     position: fixed;
     top: 0;
@@ -27,9 +28,24 @@ body {
     right:0;
     bottom:0;
     height: 100vh;
-    background: url(./cover.avif);
-    background-repeat: no-repeat;
+    background: var(--theme);
+    /* background: url(./cover.avif); */
+    /* background-repeat: no-repeat;
     background-size: cover;
     filter: blur(4px);
     z-index: -1;
-  }
+  }  */
+
+  @media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+      height: auto;
+        font-size: 1rem;
+    }
+}
