@@ -223,7 +223,7 @@ function ProjectLandingPage() {
                         <Tooltip placement="top" title='Modals'><img src={modals} width='60%' /></Tooltip>
                     </section>
                     </div>
-                    {/* {/* </div> */}
+                    
         </div> 
                 
         </motion.div>
