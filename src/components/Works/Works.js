@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Works.css';
+import Header from '../Header/index'
 import ImagesBazaarImage from '../../assets/ImageBazaar.png'; 
 import SnakeGameImage from '../../assets/snakeGame.png';
 import YouTubeVideoImage from '../../assets/Youtube.png';
@@ -96,6 +97,8 @@ function Works() {
       };
     
       return (
+        <>
+        <Header/>
         <motion.div
           className='project-works'
           variants={containerVariants}
@@ -117,13 +120,14 @@ function Works() {
               />
               <br></br>
               <br></br>
-               <div> <a href={project.live}target='__blank' >Watch Live</a></div>
+               <div className='live'> <a href={project.live}target='__blank' >Watch Live</a></div>
               <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 {project.description}
               </motion.p>
             </motion.div>
           ))}
         </motion.div>
+        </>
       );
 }
 

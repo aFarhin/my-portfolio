@@ -45,7 +45,7 @@
     transition: 1s;
 }
 .navbar a:hover{
-    color: var(--green);
+    color: rgb(255, 123, 0);
 }
 
 .mobile-drawer{

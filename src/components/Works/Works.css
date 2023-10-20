@@ -40,7 +40,7 @@
     margin: 20px 0;
 
   }
-  a{
+ .live a{
     margin-top: 2rem;
     border: 2px solid rgb(23, 128, 9);
     padding: .2rem;
@@ -49,7 +49,7 @@
     color: rgb(17, 17, 17);
     font-weight: 700;
   }
-  a:hover{
+ .live a:hover{
     background-color: transparent;
     border: yellowgreen 2px solid;
     color: rgb(127, 175, 39);

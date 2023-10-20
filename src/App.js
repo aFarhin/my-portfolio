@@ -5,9 +5,11 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Works from './components/Works/Works';
+// import Header from './components/Header';
 
 function App() {
   return (
+    // <> <Header/>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Homepage />}/>
@@ -17,6 +19,7 @@ function App() {
         <Route path='/contact' element={<Contact />}/>
       </Routes>
     </BrowserRouter>
+    // </>
   );
 }
 
