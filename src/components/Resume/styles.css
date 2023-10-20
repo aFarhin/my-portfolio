@@ -4,22 +4,23 @@
 }
 
 .pdf-download-btn{
-    padding: .5rem;
-    border-radius: 1rem;
+    padding: .2rem;
+    border-radius: 5px;
     background-color: transparent;
     border: none;
-    box-shadow: 2px 2px 5px rgb(216, 11, 11);
+    box-shadow: 2px 2px 3px 2px rgb(226, 219, 219);
     color: rgb(2, 29, 2);
     font-weight: 700;
-    text-shadow: 2px 2px 5px rgb(7, 65, 21);
+    text-shadow: 2px 2px 5px rgb(7, 16, 65);
     font-size: 1rem;
-    border: 2px solid yellowgreen;
+    border: 2px solid rgb(63, 85, 18);
     cursor: pointer;
     font-style: italic;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: rgb(146, 212, 39);
+    background-color:var(--grey);
+    margin-bottom: 2rem;
 }
 .pdf-download-btn:hover{
-    background-color: wheat;
+    background-color:wheat ;
 }

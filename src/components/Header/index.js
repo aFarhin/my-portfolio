@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Header() {
     return (
         <div className='header'>
-            <Link to='#' className='logo'>Farhin<span style={{ color: '#00abf0' }}> .</span></Link>
+            <Link to='#' className='logo'>Farhin<span style={{ color: 'blue' }}> .</span></Link>
             <div className='navbar'>
                 <Link className='links' to="/">Home</Link>
                 <Link className='links' to="/project">Projects</Link>

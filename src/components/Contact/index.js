@@ -5,8 +5,8 @@ const Contact = () => {
   return (
     <>
       <div className="project-list">
-        <h1 style={{ textAlign: 'center', color:'greenyellow', textShadow:'2px 2px 5px red' }}>Contact Me</h1>
-        <p style={{ marginTop: '1rem', textAlign: 'center', color:'wheat' }}>Thank you for visiting my portfolio! If you have any questions, inquiries, or collaboration proposals, I'm excited to hear from you. I am eager to work with you and utilize my web development skills and knowledge to enhance your productivity. Let's create something amazing together!</p>
+        <h1 style={{ textAlign: 'center', color:'grey', textShadow:'2px 2px 4px blue' }}>Contact Me</h1>
+        <p style={{ marginTop: '1rem', textAlign: 'center', color:'grey' }}>Thank you for visiting my portfolio! If you have any questions, inquiries, or collaboration proposals, I'm excited to hear from you. I am eager to work with you and utilize my web development skills and knowledge to enhance your productivity. Let's create something amazing together!</p>
       </div>
       <div className='contact-container'>
         <p>Name - Ahmeda Farhin</p>

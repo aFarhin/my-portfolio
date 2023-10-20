@@ -2,12 +2,13 @@
   --white:#fff;
   --black:#111;
   --blue:#3a80e9;
-  --grey:#888;
+  --grey:#b6b4b4;
   --darkgrey:#1b1b1b;
   --green:#61c96f;
   --red:#f94141;
   /* --theme:#081b29; */
-  --theme: rgb(5, 59, 21);
+  /* --theme: rgb(5, 59, 21); */
+  --theme: black;
 }
 ::-webkit-scrollbar {
   width: 0rem;

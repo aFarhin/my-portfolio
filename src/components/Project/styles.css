@@ -4,8 +4,8 @@
     color: rgba(177,277,277,0.7);
     transition: all 0.7s;
     font-size: 2.3rem;
-    color: rgb(84, 226, 148);
-    text-shadow: 2px 2px 5px rgb(3, 43, 13);
+    color: var(--grey);
+    text-shadow: 2px 2px 5px rgb(13, 71, 27);
 
 }
 .project-page{
@@ -56,10 +56,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     align-items: center;
-    color: yellowgreen;
-    text-shadow: 2px 2px 5px rgb(189, 11, 79);
+    color: var(--grey);
+    text-shadow: 1px 2px 2px rgb(73, 94, 212);
 }
 .project-link{
     display: flex;
@@ -72,7 +72,7 @@
 }
 .link-logo{
     width: 1.8rem;
-    background-color: yellowgreen;
+    background-color:var(--grey);
     border-radius: 50%;
 }
 a{
@@ -80,6 +80,7 @@ a{
 }
 .desciption{
     text-align: justify;
+    color: var(--grey);
 }
 .project-dec-with-img{
     display: flex;
@@ -90,8 +91,9 @@ a{
 }
 
 .project-dec-with-img img{
-    border: 4px solid yellowgreen;
-    box-shadow: 2px 2px 7px rgb(62, 182, 88);
+    border-radius: 10px;
+    border: 4px solid var(--grey);
+    box-shadow: 2px 2px 7px rgb(145, 150, 146);
 }
 .final-div{
     display: flex;

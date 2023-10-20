@@ -9,8 +9,8 @@ function LandingPage() {
             <div className='home'>
                 <div className='home-content'>
                     <h1>Hi, I'm Ahmeda Farhin</h1>
-                    <h3>Frontend Web Developer</h3>
-                    <p>Hello, I am Ahmeda Farhin. Currently, I am Pursuing a Full stack web development course. Throughout this comprehensive course, I have delved into essential technologies like HTML, CSS, JavaScript, and React. Along the way, I have successfully completed numerous projects assigned during the course and even took the initiative to work on some personal projects independently.</p>
+                    <h3>FullStack Web Developer</h3>
+                    <p>Hello, I am Ahmeda Farhin. Currently, I am Pursuing a Full stack web development course. Throughout this comprehensive course, I have delved into essential technologies like HTML, CSS, JavaScript,ReactJs and NodeJs. Along the way, I have successfully completed numerous projects assigned during the course and even took the initiative to work on some personal projects independently.</p>
                     <div className='btn-box'>
                     
                         <a href='/contact'>Let's Talk</a>
