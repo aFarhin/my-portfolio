@@ -1,6 +1,6 @@
-import React from 'react'
-import './styles.css'
-import SampleImage from '../../assets/self.jpeg'
+import React from 'react';
+import './styles.css';
+import SampleImage from '../../assets/self.jpeg';
 import { Tooltip } from '@mui/material';
 
 function LandingPage() {
@@ -8,33 +8,43 @@ function LandingPage() {
         <>
             <div className='home'>
                 <div className='home-content'>
-                    <h1>Hi, I'm Ahmeda Farhin</h1>
-                    <h3>FullStack Web Developer</h3>
-                    <p>Hello, I am Ahmeda Farhin. Currently, I am Pursuing a Full stack web development course. Throughout this comprehensive course, I have delved into essential technologies like HTML, CSS, JavaScript,ReactJs and NodeJs. Along the way, I have successfully completed numerous projects assigned during the course and even took the initiative to work on some personal projects independently.</p>
+                    <h1 className='title'>Hello, I'm Farhin</h1>
+                    <h3 className='subtitle'>Frontend Software Developer</h3>
+                    <p className='description'>
+                        I'm a passionate Frontend Software Developer currently contributing to innovative projects at Synechron. 
+                        With a solid foundation from my one-year Full Stack Web Development training at Acciojob, I've honed my skills in both frontend and backend technologies. 
+                        I specialize in crafting seamless user experiences, combining creativity with code to bring ideas to life. 
+                        From building intuitive interfaces to optimizing performance, I thrive on turning complex challenges into elegant solutions.
+                    </p>
                     <div className='btn-box'>
-                    
-                        <a href='/contact'>Let's Talk</a>
+                        <a className='cta-btn' href='/contact'>Let's Collaborate</a>
+                        <span style={{padding:"2rem"}}></span>
+                        <a className='cta-btn' href='/works'>View Projects</a>
                     </div>
                 </div>
-                <div className='sample-div'>
-                    <img className='sample-image' src={SampleImage} />
+                <div className='image-div'>
+                    <img className='profile-image' src={SampleImage} alt="Ahmeda Farhin" />
                 </div>
             </div>
-            <div class="home-sci">
-                <Tooltip placement='bottom' title='Github'>
-                    <a href="https://github.com/aFarhin" target="_blank"><i class='bx bxl-github'></i></a>
+            <div className='social-links'>
+                <Tooltip placement='bottom' title='GitHub'>
+                    <a href="https://github.com/aFarhin" target="_blank" rel="noopener noreferrer">
+                        <i className='bx bxl-github social-icon'></i>
+                    </a>
                 </Tooltip>
                 <Tooltip placement='bottom' title='Email'>
-                    <a href="mailto:ahmeda.farhin28@gmail.com/" target="_blank"><span class="material-symbols-outlined">
-                        mail
-                    </span></a>
+                    <a href="mailto:ahmeda.farhin28@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <span className="material-symbols-outlined social-icon">mail</span>
+                    </a>
                 </Tooltip>
-                <Tooltip placement='bottom' title='Linkedin'>
-                    <a href="https://www.linkedin.com/in/ahmeda-f-772002204/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <Tooltip placement='bottom' title='LinkedIn'>
+                    <a href="https://www.linkedin.com/in/ahmeda-f-772002204/" target="_blank" rel="noopener noreferrer">
+                        <i className='bx bxl-linkedin social-icon'></i>
+                    </a>
                 </Tooltip>
             </div>
         </>
-    )
+    );
 }
 
-export default LandingPage
+export default LandingPage;

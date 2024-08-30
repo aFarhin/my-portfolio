@@ -1,24 +1,23 @@
 import React from 'react';
-import './styles.css'
+import './styles.css';
 
 const Contact = () => {
   return (
     <>
-      <div className="project-list">
-        <h1 style={{ textAlign: 'center', color:'grey', textShadow:'2px 2px 4px blue' }}>Contact Me</h1>
-        <p style={{ marginTop: '1rem', textAlign: 'center', color:'grey' }}>Thank you for visiting my portfolio! If you have any questions, inquiries, or collaboration proposals, I'm excited to hear from you. I am eager to work with you and utilize my web development skills and knowledge to enhance your productivity. Let's create something amazing together!</p>
+      <div className="contact-header">
+        <h1>Contact Me</h1>
+        <p>I appreciate your interest in my portfolio! Whether you have questions, a project idea, or a potential collaboration, I'd love to connect. Let's work together to create innovative solutions that drive success and elevate your business. I'm eager to apply my web development expertise to make your vision a reality.</p>
       </div>
-      <div className='contact-container'>
-        <p>Name - Ahmeda Farhin</p>
-        <p>Email - ahmeda.farhin28@gmail.com</p>
-        <p>Mobile No. - +91 8617048337 <span style={{fontSize:'0.7rem'}}>(same on whatsapp)</span></p>
-        <p>Work Experience - Fresher</p>
-        Permanent Address :<address>
-          Amtala More; Basantapur, Town- Arambagh,
-           P.O- Arambagh, P.S- Arambagh, Dist- Hooghly, State- West Bengal, PIN- 712601
-        </address>
+      <div className='contact-details'>
+        <div>
+          <p><strong>Name:</strong> Ahmeda Farhin</p>
+          <p><strong>Email:</strong> ahmeda.farhin28@gmail.com</p>
+          <p><strong>Mobile:</strong> +91 8617048337</p>
+          <p><strong>Position:</strong> Frontend Developer at Synechron</p>
+          <p><strong>Address:</strong> HSR Layout, Bangalore</p>
+        </div>
       </div>
-      <p className='thankyou-note'>I'm committed to providing top-notch service and ensuring that your web development needs are met with the utmost professionalism and dedication. I look forward to hearing from you and the possibility of collaborating on exciting projects together!</p>
+      <p className='thankyou-note'>I am dedicated to delivering high-quality web development services and look forward to the opportunity to collaborate on impactful projects. Let's create something exceptional together!</p>
     </>
   );
 };
