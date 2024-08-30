@@ -11,6 +11,7 @@ function DrawerBox() {
         background: '#fafa00',
         backgroundColor: 'red'
     }
+    
     return (
         <div>
             <IconButton onClick={() => setOpen(true)} ><MenuRoundedIcon className='link' /></IconButton>
