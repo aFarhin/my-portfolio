@@ -98,7 +98,7 @@ body {
   background: #11496e;
   color: rgb(249, 246, 246);
   font-weight: 400;
-  font-size: .7rem;
+  font-size: .9rem;
   text-decoration: none;
   transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
