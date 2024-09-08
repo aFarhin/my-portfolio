@@ -8,23 +8,29 @@ function DrawerBox() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
-      <IconButton
-        onClick={() => setOpen(true)}
-        sx={{
-          userSelect: 'none',
-          width: '2.6rem',
-          height: '2.6rem',
-          fontSize: '2rem',
-          display: 'inline-block',
-          color: '#76b6e0',
-          fill: 'currentColor',
-          flexShrink: 0,
-          transition: 'fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
-        }}
-      >
-        <MenuRoundedIcon />
-      </IconButton>
+    <div style={{ position: 'relative', height: '100vh', rightt: '3rem'}}>
+  <IconButton
+    onClick={() => setOpen(true)}
+    sx={{
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-70%, -60%)',
+      userSelect: 'none',
+      width: '2rem',
+      height: '2rem',
+      fontSize: '2rem',
+      border: '1px solid grey',
+      borderRadius: '10%',
+      color: 'grey',
+      fill: 'currentColor',
+      flexShrink: 0,
+      transition: 'fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+    }}
+  >
+    <MenuRoundedIcon />
+  </IconButton>
+
 
       <Drawer
         anchor={'right'}

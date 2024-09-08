@@ -2,8 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Works.css';
 import Header from '../Header/index';
-
-// Existing project images
 import ImagesBazaarImage from '../../assets/ImageBazaar.png'; 
 import SnakeGameImage from '../../assets/snakeGame.png';
 import YouTubeVideoImage from '../../assets/Youtube.png';
@@ -13,8 +11,6 @@ import AboutMeImage from '../../assets/AboutMe.png';
 import TicTacToeImage from '../../assets/TicTacToe.png';
 import CounterGameImage from '../../assets/NumberGame.png';
 import JIRAImage from '../../assets/Jira.png';
-
-// New project images
 import homepageDarkImg from '../../assets/crypto/Homepage.png';
 import HomepageMeShop from '../../assets/MeShop/Homepage.png';
 import tabularfinancily from '../../assets/Financily/fin_table.png';
@@ -100,14 +96,14 @@ function Works() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2, 
+        staggerChildren: 0, 
       },
     },
   };
 
   const projectVariants = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, y: -100 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -116,10 +112,7 @@ function Works() {
       <motion.div
         className='project-works'
         variants={containerVariants}
-        initial='hidden'
-        animate='visible'
       >
-        {/* <h1>PROJECT WORKS</h1> */}
         {projectList.map((project, index) => (
           <motion.div
             key={index}
@@ -130,7 +123,7 @@ function Works() {
             <motion.img
               src={project.image}
               alt={project.name}
-              whileHover={{ scale: 1.1, transition: { duration: 0.3 } }} 
+              whileHover={{ scale: 1.1, transition: { duration: 1.7 } }} 
             />
             <br />
             <br />
