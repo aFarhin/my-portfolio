@@ -11,11 +11,9 @@ function LandingPage() {
                     <h1 className='title'>Hello, I'm Farhin</h1>
                     <h3 className='subtitle'>Frontend Software Developer</h3>
                     <p className='description'>
-                        I'm a passionate Frontend Software Developer currently contributing to innovative projects at Synechron. 
-                        With a solid foundation from my one-year Full Stack Web Development training at Acciojob, I've honed my skills in both frontend and backend technologies. 
-                        I specialize in crafting seamless user experiences, combining creativity with code to bring ideas to life. 
-                        From building intuitive interfaces to optimizing performance, I thrive on turning complex challenges into elegant solutions.
-                    </p>
+  I am a dedicated Frontend Software Developer with experience at Synechron and a solid foundation from one year of Full Stack Web Development training at Acciojob. My expertise lies in creating intuitive user interfaces and optimizing performance. I am passionate about turning complex challenges into elegant solutions, combining creativity and technical skill to deliver seamless user experiences.
+</p>
+
                     <div className='btn-box'>
                         <a className='cta-btn' href='/contact'>Let's Collaborate</a>
                         <span style={{padding:"2rem"}}></span>

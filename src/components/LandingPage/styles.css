@@ -9,43 +9,38 @@ body {
     align-items: center;
     padding-top: var(--header-height, 60px);
     background-attachment: fixed;
-  }
+}
 
-  :root {
+:root {
     --header-height: 60px;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     :root {
-      --header-height: 50px;
+        --header-height: 50px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     :root {
-      --header-height: 45px;
+        --header-height: 45px;
     }
-  }
-  
-  section {
+}
+
+section {
     background: rgba(0, 0, 0, 0.6);
-    /* background: #20C997; */
     border-radius: 8px;
     padding: 20px;
     box-shadow: 1px 2px 4px 8px rgba(54, 53, 53, 0.5);
     max-width: 1200px;
     width: 90%;
     margin: 20px auto;
-  }
-  
-  h1, h2, h3, p{
+}
+
+h1, h2, h3, p {
     text-shadow: 1px 1px 3px rgba(54, 53, 53, 0.5);
-  }
-  
+}
 
-
-/* Home Section */
 .home {
     display: flex;
     justify-content: space-between;
@@ -60,7 +55,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* Content Section */
 .home-content {
     max-width: 800px;
 }
@@ -78,29 +72,39 @@ body {
     margin-bottom: 20px;
 }
 
-.description{
+.description {
     font-size: 1.2rem;
-    color: white;
     line-height: 1.8;
     margin-bottom: 30px;
-    color: white; 
+    color: white;
 }
-.btns{
+
+.btns {
     padding: 2rem;
 }
+
+.btn-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
 .cta-btn {
-  margin-top: 2rem;
-  width: 20px;
-  border: 2px solid #008cffc4;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  box-shadow: 1px 2px  4px 2px rgba(154, 167, 199, 0.3);
-  background: #11496e;
-  color: rgb(249, 246, 246);
-  font-weight: 400;
-  font-size: .9rem;
-  text-decoration: none;
-  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin-top: 2rem;
+    width: 160px;
+    border: 2px solid #008cffc4;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px 2px rgba(154, 167, 199, 0.3);
+    background: #11496e;
+    color: rgb(249, 246, 246);
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    text-align: center;
 }
 
 .cta-btn:hover {
@@ -110,7 +114,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Image Section */
 .image-div {
     flex-shrink: 0;
     margin-top: 20px;
@@ -126,7 +129,6 @@ body {
     box-shadow: 1px 2px 2px 2px rgba(71, 70, 70, 0.2);
 }
 
-/* Social Links */
 .social-links {
     margin-top: 20px;
     display: flex;
@@ -144,7 +146,6 @@ body {
     color: #1c5985;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .home {
         flex-direction: column;
@@ -159,14 +160,27 @@ body {
 
     .profile-image {
         margin-top: 20px;
-        max-width: 150px; 
-    }
-
-    .social-links {
-        justify-content: center;
+        max-width: 150px;
     }
 
     .social-icon {
         margin-right: 10px;
+    }
+
+    .cta-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-box {
+        flex-direction: column;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 0.6rem 0;
+        font-size: 0.9rem;
     }
 }

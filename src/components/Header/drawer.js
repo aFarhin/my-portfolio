@@ -1,40 +1,49 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { IconButton } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import { Link } from 'react-router-dom';
+import { blue } from '@mui/material/colors';
 
 function DrawerBox() {
+  const [open, setOpen] = useState(false);
 
-    const [open, setOpen] = useState(false);
-    const listStyle3 = {
-        background: '#fafa00',
-        backgroundColor: 'red'
-    }
-    
-    return (
-        <div>
-            <IconButton onClick={() => setOpen(true)} ><MenuRoundedIcon className='link' /></IconButton>
-            <Drawer
-                anchor={'right'}
-                open={open}
-                onClose={() => setOpen(false)}
-                PaperProps={{
-                    sx: {
-                        background:'var(--theme)',
-                    }
-                }}
-            >
-                <div className='drawer-div'>
-                    <Link className='link' to="/">Home</Link>
-                    {/* <Link className='link' to="/project">Projects</Link> */}
-                    <Link className='link' to="/works">Projects</Link>
-                    <Link className='link' to="/contact">Contact</Link>
-                   
-                </div>
-            </Drawer>
+  return (
+    <div>
+      <IconButton
+        onClick={() => setOpen(true)}
+        sx={{
+          userSelect: 'none',
+          width: '2.6rem',
+          height: '2.6rem',
+          fontSize: '2rem',
+          display: 'inline-block',
+          color: '#76b6e0',
+          fill: 'currentColor',
+          flexShrink: 0,
+          transition: 'fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+        }}
+      >
+        <MenuRoundedIcon />
+      </IconButton>
+
+      <Drawer
+        anchor={'right'}
+        open={open}
+        onClose={() => setOpen(false)}
+        PaperProps={{
+          sx: {
+            background: 'var(--theme)', 
+          },
+        }}
+      >
+        <div className='drawer-div'>
+          <a className='link' href="/" onClick={() => setOpen(false)}>Home</a>
+          <a className='link' href="/works" onClick={() => setOpen(false)}>Projects</a>
+          <a className='link' href="/contact" onClick={() => setOpen(false)}>Contact</a>
         </div>
-    )
+      </Drawer>
+    </div>
+  );
 }
 
-export default DrawerBox
+export default DrawerBox;

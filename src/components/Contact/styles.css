@@ -1,8 +1,9 @@
-
+/* General Styles for Contact Header */
 .contact-header h1 {
-  font-size: 1.5rem;
+  font-size: 2rem; /* Increased font size for larger screens */
   color: #5387a9;
   text-align: center;
+  margin-top:20px ;
   margin-bottom: 20px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -14,8 +15,10 @@
   line-height: 1.6;
   margin-bottom: 30px;
   max-width: 800px;
+  margin: 0 auto; /* Center align text block */
 }
 
+/* Contact Details Container */
 .contact-details {
   background: rgba(255, 255, 255, 0.199);
   border-radius: 10px;
@@ -35,6 +38,7 @@
   color: #5387a9;
 }
 
+/* Thank You Note */
 .thankyou-note {
   font-size: 1.2rem;
   color: #d1d5db;
@@ -42,11 +46,15 @@
   line-height: 1.6;
   margin: 30px 20px;
   max-width: 800px;
+  margin: 0 auto; /* Center align text block */
 }
 
+/* Responsive Styles */
+
+/* Tablets and Medium Devices */
 @media (max-width: 768px) {
   .contact-header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .contact-header p, .thankyou-note {
@@ -55,6 +63,7 @@
 
   .contact-details {
     padding: 20px;
+    max-width: 90%; /* Adjust width for smaller screens */
   }
 
   .contact-details p {
@@ -62,9 +71,10 @@
   }
 }
 
+/* Mobile Devices */
 @media (max-width: 480px) {
   .contact-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .contact-header p, .thankyou-note {
@@ -73,9 +83,30 @@
 
   .contact-details {
     padding: 15px;
+    max-width: 90%; /* Further reduce width for smaller screens */
   }
 
   .contact-details p {
     font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 320px) {
+  .contact-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .contact-header p, .thankyou-note {
+    font-size: 0.8rem;
+  }
+
+  .contact-details {
+    padding: 10px;
+    max-width: 95%;
+  }
+
+  .contact-details p {
+    font-size: 0.85rem;
   }
 }
